@@ -1,6 +1,6 @@
 import { Footer } from "./Footer"
 import { Navbar } from "./Navbar"
-import PropType from "prop-type"
+import PropTypes from "prop-type"
 
 
 export const Layout = ({ children }) => {
@@ -18,6 +18,6 @@ export const Layout = ({ children }) => {
    )
 }
 
-Layout.PropType ={
+Layout.propType ={
    children: PropTypes.node.isrequired,
 };
