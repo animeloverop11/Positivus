@@ -13,7 +13,7 @@ export const Navbar = () => {
         
    
          {/* Navigation Links*/}
-         <div className="flex gap-10">
+         <div className="hidden md:flex gap-10">
             <Link to="/about-us"className="text-base 2xl:text-xl">About Us</Link>
 
             <Link to="/services"className="text-base 2xl:text-xl">Services</Link>
