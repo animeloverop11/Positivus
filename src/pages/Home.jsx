@@ -1,9 +1,10 @@
-
+import { Hero } from "../components/Hero"
 export const Home = () => {
    return (
-      <div className="bg-red-900 flex h-96">
+      <div className="h-auto">
 
-         Home Page of My Website
+
+       <Hero />  
          
       </div>
    )
