@@ -1,6 +1,33 @@
 import { Link } from "react-router-dom"
 export const Hero = () => {
+    const imgSrc = [
+        {
+           src: "/Amazon.png",
+           alt: "amazon image"
+        },{
+           src: "/Dribble.png",
+           alt: "dribble image"
+  
+        },{
+           src: "/HubSpot.png",
+           alt: "hubspot image"
+  
+        },{
+           src: "/Notion.png",
+           alt: "notion image"
+  
+        },{
+           src: "/Netflix.png",
+           alt: "netflix image"
+  
+        },{
+           src: "/Zoom.png",
+           alt: "zoom image"
+  
+        }
+     ]
     return (
+        <div>
         <div className="w-full flex justifiy-between">
             <div className="w-1/2 flex flex-col gap-4 2xl:gap-8">
 
@@ -17,6 +44,14 @@ export const Hero = () => {
             </div>
 
         </div>
+        
+            <div  className="flex justify-between">
+                {imgSrc.map((image, index) => (
+                    <img src={image.src} alt={image.alt} key={index}/>
 
+                ))}
+                </div>
+        </div>
+            
     )
 }
