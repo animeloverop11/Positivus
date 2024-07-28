@@ -5,6 +5,7 @@ import { Pricing } from "./pages/Pricing"
 import { Blog } from "./pages/Blog"
 import { Services } from "./pages/Services"
 import { Layout } from "./components/Layout"
+import { ScrollToTop} from "./components/ScrollToTop"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
     
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>}/>
         <Route path="/about-us" element={<Layout><About /></Layout>}/>
