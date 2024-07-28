@@ -6,7 +6,7 @@ export const Services = () => {
             <div className="flex gap-10 mb-16 2xl:mb-20">
                 <h2 className="bg-[#B9FF66] inline-block p-2 2xl:p-4 rounded-md 2xl:rounded-lg font-medium text-3xl 2xl:text-5xl">Services</h2>
 
-                <p className="w-[580px] 2xl:w-[780px] h-[46px]  text-lg 2xl:text-2xl">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+                <p className="w-[580px] 2xl:w-[780px] h-[46px] text-lg 2xl:text-2xl">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
 
             </div>
             {/* Services Cards */}
