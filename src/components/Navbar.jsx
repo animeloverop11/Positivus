@@ -28,7 +28,7 @@ export const Navbar = () => {
 
          {/*Hamburger Menu */}
          <div className="flex md:hidden">
-            <RxHamburgerMenu width={30} height={30} />
+            <RxHamburgerMenu className="w-10 h-10 "/>
          </div>
       </div>
    )
