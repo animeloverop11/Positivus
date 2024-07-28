@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Navbar = () => {
    return(
@@ -7,21 +8,27 @@ export const Navbar = () => {
 
       {/* Website Logo */}
       <Link to="/" className="flex items-center gap-1">
-      <img src="/Icon.svg" alt="Positivius logo" width={25} height={25} />
-       <h1 className="text-2xl 2xl:text-4xl">Positivus</h1>
+      <img src="/Icon.svg" alt="Positivius logo" width={30} height={30} />
+       <h1 className="text-2xl 2xl:text-5xl font-semibold">Positivus</h1>
         </Link>
         
    
          {/* Navigation Links*/}
          <div className="hidden md:flex gap-10">
-            <Link to="/about-us"className="text-base 2xl:text-xl">About Us</Link>
+            <Link to="/about-us"className="text-base 2xl:text-3xl">About Us</Link>
 
-            <Link to="/services"className="text-base 2xl:text-xl">Services</Link>
+            <Link to="/services"className="text-base 2xl:text-3xl">Services</Link>
 
-            <Link to="/pricing"className="text-base 2xl:text-xl">Pricing</Link>
+            <Link to="/pricing"className="text-base 2xl:text-3xl">Pricing</Link>
 
-            <Link to="/blog"className="text-base 2xl:text-xl">Blog</Link>
+            <Link to="/blog"className="text-base 2xl:text-3xl">Blog</Link>
             
+         </div>
+
+
+         {/*Hamburger Menu */}
+         <div className="flex md:hidden">
+            <RxHamburgerMenu />
          </div>
       </div>
    )
