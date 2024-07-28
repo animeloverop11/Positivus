@@ -45,9 +45,9 @@ export const Hero = () => {
 
         </div>
         
-            <div  className="flex justify-between">
+            <div  className="max-md:flex-wrap  flex max-md:justify-around justify-between">
                 {imgSrc.map((image, index) => (
-                    <img src={image.src} alt={image.alt} key={index}/>
+                    <img src={image.src} alt={image.alt} key={index} className="max-md:w-20 max-md:h-20 object-contain"/>
 
                 ))}
                 </div>
